@@ -1,5 +1,4 @@
 "use client";
-
 import { useTheme } from "next-themes";
 import { useEffect, useMemo, useState } from "react";
 import {
@@ -16,7 +15,9 @@ export const cloudProps: Omit<ICloud, "children"> = {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      width: "100%",
+      width: "500px",  // Increase width
+      height: "700px",
+      // width: "100%",
       paddingTop: 40,
     },
   },
@@ -46,7 +47,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 42,
+    size: 60,
     aProps: {
       href: undefined,
       target: undefined,
@@ -74,7 +75,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
+      renderCustomIcon(icon, theme || "dark")
     );
   }, [data, theme]);
 

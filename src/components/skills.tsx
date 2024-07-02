@@ -1,4 +1,3 @@
-// src/components/IconCloudDemo.tsx
 import IconCloud from "./icon-cloud";
 
 const slugs = [
@@ -8,7 +7,7 @@ const slugs = [
   "mongodb",
   "html5",
   "css3",
-  "mysql",
+  "microsoftsqlserver",
   "git",
   "github",
   "cplusplus",
