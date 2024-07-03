@@ -1,12 +1,9 @@
 import React from 'react';
-import Progressbar from './progressbar';
-import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiDotnet, SiJavascript } from 'react-icons/si';
-import Rightsectionskills from './rightsectionskills';
-import FlipWordsDemo from './FlipWordsDemo';
-import ProgressBar from './progressbar';
-import ProgressContainer from './ProgressContainer';
+// import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiDotnet, SiJavascript } from 'react-icons/si';
+import Rightsectionskills from './skillsSectionBottomRight';
+import ProgressContainer from './skillsSectionBottomLeft';
 
-const GridLayout: React.FC = () => {
+const SkillsSectionBottom: React.FC = () => {
     return (
         // <div className="no-border min-h-screen bg-black text-white text-center p-4">
         //     {/* Top Section */}
@@ -71,7 +68,6 @@ const GridLayout: React.FC = () => {
         // </div>
         <div className="flex flex-col md:flex-row h-screen">
       <div className="flex-1 justify-center items-center bg-black">
-        {/* <FlipWordsDemo /> */}
         <ProgressContainer />
       </div>
       <div className="flex-1 flex justify-center items-center bg-black">
@@ -82,4 +78,4 @@ const GridLayout: React.FC = () => {
     );
 };
 
-export default GridLayout;
+export default SkillsSectionBottom;

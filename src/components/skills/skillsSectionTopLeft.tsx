@@ -1,4 +1,4 @@
-import { FlipWords } from '../utils/flip-words';
+import { FlipWords } from '../../utils/flip-words';
 
 export function FlipWordsDemo() {
     const words = ['responsive', 'dynamic', 'user-friendly', 'secure', 'scalable'];

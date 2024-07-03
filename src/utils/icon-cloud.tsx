@@ -12,13 +12,14 @@ import {
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
-      display: "flex",
+      display: "flex-1",
       justifyContent: "center",
       alignItems: "center",
-      width: "500px",  // Increase width
-      height: "700px",
+      // width: "500px",  // Increase width
+      // height: "700px",
       // width: "100%",
       paddingTop: 40,
+      paddingBottom:50
     },
   },
   options: {

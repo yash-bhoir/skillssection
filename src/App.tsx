@@ -1,15 +1,25 @@
-// src/App.tsx
-import React from 'react';
-import GridLayout from './components/GridLayout';
-import "./App.css"
-import TwoColumnLayout from './components/skillssection1';
+import React, { useRef } from 'react';
+import "./App.css";
+import { motion, useScroll } from "framer-motion";
+
+import SkillsSectionComplete from './components/skills/skillsSectionComplete';
+import Aboutme from './components/aboutme/aboutme';
 
 const App: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({ container: scrollRef });
+
   return (
-    <div className="App">
-      <TwoColumnLayout/>
-      <GridLayout />
-    </div>
+    <>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
+      <div className="App" ref={scrollRef}>
+        <Aboutme />
+        <SkillsSectionComplete />
+      </div>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgressBar from './progressbar';
+import ProgressBar from '../../utils/ProgressBar';
 
 const ProgressContainer: React.FC = () => {
   return (
