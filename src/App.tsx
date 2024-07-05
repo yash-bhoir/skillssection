@@ -4,6 +4,7 @@ import { motion, useScroll } from "framer-motion";
 
 import SkillsSectionComplete from './components/skills/skillsSectionComplete';
 import Aboutme from './components/aboutme/aboutme';
+import Contact from './components/contact/Contact';
 
 const App: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <div className="App" ref={scrollRef}>
         <Aboutme />
         <SkillsSectionComplete />
+        <Contact/>
       </div>
     </>
   );

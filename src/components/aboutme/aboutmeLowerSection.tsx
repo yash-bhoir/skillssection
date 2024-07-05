@@ -3,7 +3,7 @@ import TextRevealByWord from '../../utils/text-reveal'; // Assuming you meant Te
 
 const TextRevealDemo: React.FC = () => {
     return (
-        <div className="flex min-h-screen items-center justify-center bg-black text-white ">
+        <div className="flex min-h-screen items-center justify-center bg-black text-white  ">
             <TextRevealByWord text={`I am a full-stack developer with a passion for building scalable,high-performance applications, delivering exceptional user experiences through modern frontend architecture, and robust backend solutions.`} />
         </div>
     );
