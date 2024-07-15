@@ -22,7 +22,7 @@ const CoderProfile: React.FC = () => {
   };
 
   return (
-    <div className='overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8 'style={styles.codeBlock}>
+    <div className='order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] 'style={styles.codeBlock}>
       <pre>
         <code>
           <span style={styles.keyword}>const</span> coder = {'{'} <br />

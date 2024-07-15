@@ -79,3 +79,32 @@
       z-index: 100;transform: rotate(315deg);}
 }
 
+.card {
+  background-color: #2f3136;
+  color: #ffffff;
+  border: 1px solid #4f545c;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-header {
+  background-color: #202225;
+  padding: 8px;
+  border-bottom: 1px solid #4f545c;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-footer {
+  background-color: #202225;
+  padding: 8px;
+  border-top: 1px solid #4f545c;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card-content {
+  margin-top: 8px;
+}
