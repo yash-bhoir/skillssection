@@ -5,7 +5,7 @@ export function TextRevealDemo() {
 
   return (
     <TypingAnimation
-      className="text-4xl font-bold text-white dark:text-white"
+      className="text-3 xl font-bold text-white dark:text-white"
       texts={sentences}
     />
   );

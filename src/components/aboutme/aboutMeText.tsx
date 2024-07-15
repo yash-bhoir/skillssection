@@ -1,3 +1,4 @@
+// AboutMeText.tsx
 import "./aboutMeText.css";
 import { useRef } from "react";
 import {
@@ -47,7 +48,7 @@ function ParallaxText({ children, baseVelocity = 25 }: ParallaxProps) { // Furth
   });
 
   return (
-    <div className="parallax  font-normal text-neutral-600 dark:text-neutral-400">
+    <div className="parallax font-normal text-neutral-600 dark:text-neutral-400">
       <motion.div className="scroller" style={{ x }}>
         <span>{children} </span>
         <span>{children} </span>
@@ -62,8 +63,7 @@ export default function AboutMeText() {
   return (
     <section>
       <ParallaxText baseVelocity={-2}>I am a full-stack developer with a passion for building </ParallaxText> {/* Further reduced baseVelocity */}
-      <TypewriterEffectDemo/>
-      {/* <ParallaxText baseVelocity={2}>scalable, high-performance applications, delivering exceptional user experiences </ParallaxText>  */}
+      <TypewriterEffectDemo />
       <ParallaxText baseVelocity={2}>through modern frontend architecture, and robust backend solutions.</ParallaxText> {/* Further reduced baseVelocity */}
     </section>
   );

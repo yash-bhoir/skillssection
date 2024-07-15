@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
-// Define the prop types for MenuOverlay
 interface MenuOverlayProps {
   open: boolean;
 }
@@ -22,13 +22,13 @@ const NavbarContainer = styled.div`
 const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
-  color: white; // Set the logo text color to white
+  color: white;
 `;
 
 const MenuButton = styled.div`
   font-size: 1.5rem;
   cursor: pointer;
-  color: white; // Set the button icon color to white
+  color: white;
 `;
 
 const MenuOverlay = styled.div<MenuOverlayProps>`
@@ -57,7 +57,7 @@ const MenuItem = styled.li`
   cursor: pointer;
 `;
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -74,9 +74,56 @@ const Navbar = () => {
       </NavbarContainer>
       <MenuOverlay open={menuOpen}>
         <MenuItems>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Contact</MenuItem>
+          <MenuItem>
+            <Link
+              to="section1"
+              smooth={true}
+              duration={500}
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link
+              to="section2"
+              smooth={true}
+              duration={500}
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link
+              to="section3"
+              smooth={true}
+              duration={500}
+              onClick={() => setMenuOpen(false)}
+            >
+              Skills
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link
+              to="section4"
+              smooth={true}
+              duration={500}
+              onClick={() => setMenuOpen(false)}
+            >
+              Projects
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link
+              to="section5"
+              smooth={true}
+              duration={500}
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </MenuItem>
         </MenuItems>
       </MenuOverlay>
     </>
