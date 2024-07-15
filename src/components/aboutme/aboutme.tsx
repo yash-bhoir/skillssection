@@ -1,5 +1,4 @@
 import React from 'react';
-import  TextRevealDemo  from './aboutmeLowerSection';
 import AboutMeText from './aboutMeText';
 
 const AboutMe: React.FC = () => {

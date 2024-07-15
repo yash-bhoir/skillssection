@@ -1,13 +1,14 @@
-import SkillsSectionBottom from "./skillsSectionBottom"
-import SkillsSectionTop from "./skillsSectionTop"
+import React from 'react';
+import SkillsSectionTop from './skillsSectionTop';
+import SkillsSectionBottom from './skillsSectionBottom';
 
-const SkillsSectionComplete = () => {
-    return (
-        <div>
-            <SkillsSectionTop />
-            <SkillsSectionBottom />
-        </div>
-    )
-}
+const SkillsSectionComplete: React.FC = () => {
+  return (
+    <div>
+      <SkillsSectionTop />
+      <SkillsSectionBottom />
+    </div>
+  );
+};
 
-export default SkillsSectionComplete
+export default SkillsSectionComplete;

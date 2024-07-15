@@ -1,4 +1,4 @@
-import { BackgroundBeamsDemo } from "./BackgroundBeams"
+import BackgroundBeamsDemo  from "./BackgroundBeams"
 
 const Contact = () => {
   return (
