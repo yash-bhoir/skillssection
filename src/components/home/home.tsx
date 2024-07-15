@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { TextRevealDemo } from "./typingText";
-import CoderProfile from "./codeSection";
+// import CoderProfile from "./codeSection";
 import Card from "./card";
 
 const Home: React.FC = () => {

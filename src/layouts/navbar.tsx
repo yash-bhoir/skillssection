@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import Logo1 from "./logo";
 
 interface MenuOverlayProps {
   open: boolean;
@@ -67,7 +68,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <NavbarContainer>
-        <Logo>Logo</Logo>
+        <Logo><Logo1/></Logo>
         <MenuButton onClick={toggleMenu}>
           <FaBars />
         </MenuButton>
