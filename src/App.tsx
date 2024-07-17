@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Home from "./components/home/home";
 import Navbar from "./layouts/navbar";
 import Preloader from "./utils/preloder"; // Assuming Preloader is defined in this path
+import ProjectModal from "./components/projects/projectModal";
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -37,7 +38,7 @@ const App: React.FC = () => {
             <SkillsSectionComplete />
           </Element>
           <Element name="section4">
-            {/* Projects Component Here */}
+            <ProjectModal />
           </Element>
           <Element name="section5">
             <Contact />
